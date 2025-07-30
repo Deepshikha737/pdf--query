@@ -7,7 +7,7 @@ services:
     startCommand: python main.py
     envVars:
       - key: PINECONE_REGION
-      - value: us-east-1
+      - value: PINECONE_ENVIRONMENT 
       - key: PORT
         value: 10000
       - key: GROQ_API_KEY
