@@ -6,6 +6,8 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
+      - key: PINECONE_REGION
+      - value: us-east-1
       - key: PORT
         value: 10000
       - key: GROQ_API_KEY
@@ -13,4 +15,5 @@ services:
       - key: PINECONE_API_KEY
         value: YOUR_PINECONE_KEY
       - key: PINECONE_INDEX_NAME
-        value: YOUR_INDEX_NAME  # <-- ADD THIS LINE!
+        value: YOUR_INDEX_NAME
+          # <-- ADD THIS LINE!
