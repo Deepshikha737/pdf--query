@@ -3,6 +3,6 @@ uvicorn
 pypdf
 python-multipart
 sentence-transformers
-pinecone-client
+pinecone
 requests
 python-dotenv
