@@ -4,11 +4,13 @@ services:
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: python main.py  # ensures dynamic PORT usage
+    startCommand: python main.py
     envVars:
       - key: PORT
         value: 10000
       - key: GROQ_API_KEY
-        value: YOUR_API_KEY_HERE
+        value: YOUR_GROQ_KEY
       - key: PINECONE_API_KEY
-        value: YOUR_PINECONE_KEY_HERE
+        value: YOUR_PINECONE_KEY
+      - key: PINECONE_INDEX_NAME
+        value: YOUR_INDEX_NAME  # <-- ADD THIS LINE!
